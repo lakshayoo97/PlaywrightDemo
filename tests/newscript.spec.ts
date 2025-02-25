@@ -1,32 +1,20 @@
 import {test, expect, Browser, Page, Locator} from '@playwright/test';
 import { chromium } from '@playwright/test';
+import { promises } from 'dns';
 
 test ('login test suite', async() => {
 const browser:Browser = await chromium.launch({headless: false});    
 const page:Page = await browser.newPage();
-await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login#:~:text=Tags:");
+await page.goto("https://qa-app-01.qventus.com/");
 
+const User:Locator = page.locator('//form//input[@name="username"]');
+ const password:Locator = page.locator('//form//input[@type="password"]');
 
-const user:Locator = await page.locator('//form//input[@name="_token"]');
-
-
-
-// const passwordl:Locator = await page.locator('[id="input-password"]');
-// const click:Locator =await page.locator('[type="submit"]');
-
-await user.type('Admin');
-
-await page.waitForTimeout(10000);
-
-// await passwordl.fill("lucky@123");
-// await click.click();
-
-// const title1 = await page.title();
-// console.log("home page title", title1);
-
-// await page.screenshot({path:"homealonePage.png"})
-
-await browser.close
+const submit: Locator = page.locator('//form//button[@type="submit"]');
+await User.fill('hjayaswal+2000@qventus.com');
+await password.type('T@c301124');
+await submit.click();
+await browser.close();
+//await new Promise(() => {});
+//await page.waitForTimeout(1000);
 });
-
-
