@@ -1,7 +1,7 @@
 import {Browser, BrowserContext, chromium, Page, test} from "@playwright/test";
 import { ChromiumBrowser } from "@playwright/test";
 import { json } from "stream/consumers";
-import {project } from "../testDataResponse/csv1.json";
+import { project } from "../testDataResponse/csv1.json";
 
 
 test ('login test' , async() => {
