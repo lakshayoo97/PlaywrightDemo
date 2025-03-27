@@ -15,6 +15,4 @@ test ('login test', async() => {
     await page.locator('//input[@placeholder="Password"]').fill(password);
     await page.locator('(//button)[1]').click();
 
-    //await page.locator('(//p)[1]').getByRole('heading, {name: 't5'})
-
 })
