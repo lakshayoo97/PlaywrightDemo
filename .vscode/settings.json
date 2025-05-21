@@ -3,7 +3,7 @@
     "github.copilot.renameSuggestions.triggerAutomatically": false,
     "github.copilot.chat.reviewSelection.instructions": [],
     "github.copilot.chat.commitMessageGeneration.instructions": [],
-    "editor.inlineSuggest.edits.codeShifting": true,
     "editor.inlineSuggest.edits.renderSideBySide": "auto",
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.edits.allowCodeShifting": "always"
 }

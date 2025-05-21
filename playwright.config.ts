@@ -1,6 +1,12 @@
 import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
 import path from 'path';
+import { defineBddConfig } from 'playwright-bdd';
+
+const testDir = defineBddConfig({
+  features: '/Users/lakshayshankar/Documents/Project/PlaywrightDemo/featureFiles/**/*.feature',
+  // Specify the path to your step definitions
+});
 
 // Read from ".env" file.
 dotenv.config({ path: path.resolve(__dirname, '.env') });

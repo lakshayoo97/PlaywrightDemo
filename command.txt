@@ -1,0 +1,10 @@
+--> Gherkin command
+run - npx cucumber-js.
+
+--> if tags are there 
+run - npx cucumber-js --tags "@smoke".
+
+--> to run the steps and feature both.
+run - npx cucumber-js featureFile/login.feature --require-module ts-node/register --require steps/loginSteps.ts
+
+-->
