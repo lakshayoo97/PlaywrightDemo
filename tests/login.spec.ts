@@ -18,7 +18,6 @@ test.describe('Login',() => {
          if(emailDisable) {
          await expect(emailDisable).toBe(true);
       }
-      //await page.fill('[id="dontwrite"]','PlaywrightFramework');
       await page.close();
    })
 
