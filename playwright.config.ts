@@ -14,7 +14,6 @@ dotenv.config({ path: path.resolve(__dirname, '.env') });
 // Alternatively, read from "../my.env" file.
 dotenv.config({ path: path.resolve(__dirname, '..', 'my.env') });
 
-
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv

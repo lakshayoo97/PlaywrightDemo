@@ -1,3 +1,8 @@
+--> First give path in cucumber.js 
+ xyz.feature
+
+Note: Then run any command
+
 --> Gherkin command
 run - npx cucumber-js.
 

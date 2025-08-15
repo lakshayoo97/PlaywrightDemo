@@ -1,14 +1,14 @@
 module.exports = {
   default: {
-    require: ['steps/login.ts'],
+    require: ['steps/ecom.ts'],
     requireModule: ['ts-node/register'],
-    paths: ['//featureFile/login.feature'],
+    paths: ['/features/ecom.feature'],
     format: [
       'summary',
       'progress-bar',
       'json:reports/cucumber.json'
     ],
-    publishQuiet: true,
+    //publishQuiet: true,
     tags: '@smoke',
     dryRun: false,
     formatOptions: {

@@ -2,6 +2,7 @@ import {test, expect, Browser, BrowserContext, Page} from '@playwright/test';
 import { chromium } from '@playwright/test';
 
 test ('website testing', async() => {
+    const {chromium} = require('playwright');
     const broswer:Browser = await chromium.launch({headless: false});
     const context:BrowserContext =  await broswer.newContext();
     const page:Page = await context.newPage();

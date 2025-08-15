@@ -29,3 +29,6 @@ Then('the user should be redirected to the dashboard', async function () {
 Then('an error message should be displayed', async function () {
   await console.log('An error message is displayed');
 });
+Then('I click on the Register button', () => {
+  // Write code here that turns the phrase above into concrete actions
+})
